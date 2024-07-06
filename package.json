@@ -1,0 +1,29 @@
+{
+  "name": "magic_transporters",
+  "version": "1.0.0",
+  "description": "Welcome to Magic Transporters, the future of moving things easily. These super cool transporters, powered by virtual magic, are here to make shipping stuff a breeze.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node src/index.ts",
+    "build": "tsc",
+    "start": "NODE_ENV=production node ./dist/index.js",
+    "test": "jest --detectOpenHandles",
+    "clean": "rm ./*.log; rm -r dist"
+  },
+  "author": "Dener da Silva Rosa (dener.silva.rosa@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "winston": "^3.13.0"
+  }
+}
